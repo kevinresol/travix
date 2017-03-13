@@ -7,6 +7,9 @@ haxe:
   - "3.4.0"
   - development
   
+env:
+  - secure: "uq9uo9BuAH1rZj63s8fQKj+eNPy5ODSo0iYJS6pc+o0Z/bcSjLLkkgpdzU7/CH30oi5a7ugRD+gGIox5/b9rjuS19E+TOtEhpFbFmtMGpb8ocZ4iSeWxhZqU6p0n+z2zykYPbqBEKFXULwXU4pXLWaD/ajc4H0UP8fU7KoX4e1VTFvMu56e90eyPQASdDfvaOWx47OnCLfzoO4KlgVRViVonG66x2hO+WKTvBdCDLLx7PxVA2hFccqqzdAL2+jSOxWtg9dohfe9NN0kBI/N2AN2Y18D2C/ppYdEdqG1MGaHE44bdjdIGxk3HKWBk8sPUOojQndbu7UciRh35lfg440WKKoY6l7ZSXTdoCZR9P3EBa2Gs4y039nTdnoJWMO73xR5viKRDHBjtPyLQ0qLdpJPAFJEPgnTDxIglc7+nqCk+is0uwj3DltfNhhzg+piu0K+GtDhmI7VUeoCFx9WpVzie+jtRtb2J1LQtHplSkUBcpraPbUozmz1zmrgGcPcgFz/jrHF7828CFIyLDKYWJoU8hNt3qceoKHlYRSvOZ0fFU85KLGXfTjcriQRlzGURB8tH6Zp0MhhHaYV4+5TA6QIM9l4dqxtdJ1v0KH+YqYx9E7aLXqXZR2OssegTD+z821QRYuxF+WlSuFkCQZjYxlFVcIsG/MfcV+V8NK6/100="
+  
 matrix:
   allow_failures:
     - haxe: development
@@ -27,3 +30,6 @@ script:
   - haxelib run travix java
   - haxelib run travix cs
   - haxelib run travix cpp -lib hxcpp
+
+after_success:
+  - echo $HAXELIB_AUTH
