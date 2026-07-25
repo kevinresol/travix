@@ -6,12 +6,13 @@
 		"hx3compat": "",
 		"tink_cli": ""
 	},
+
 	"url": "http://github.com/back2dos/travix/",
 	"contributors": ["back2dos", "kevinresol", "ciscoheat", "vegardit"],
 	"version": "0.16.0",
 	"postDownload": "haxe -cp src --run travix.PostDownload",
 	"releasenote": "Add missing run script.",
-	"main": "Run",
+	"main": "travix.Travix",
 	"tags": ["ci", "travis", "build", "tool"],
 	"license": "MIT"
 }
