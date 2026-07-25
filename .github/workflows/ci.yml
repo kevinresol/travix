@@ -114,10 +114,6 @@ jobs:
       shell: bash
       run: lix download
 
-    - name: Build Travix
-      shell: bash
-      run: haxe build-neko.hxml -lib hx4compat
-
     - name: Set test HAXE_LIBS
       shell: bash
       run: |

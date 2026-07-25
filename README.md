@@ -135,5 +135,5 @@ The motivation behind Travix is to be able to spin up CI setups quickly, for man
 In your `.travis.yml` simply replace `haxelib install travix` with the following:
 
 ```
-haxelib git travix https://github.com/back2dos/travix && pushd . && cd $(haxelib config)travix/git && haxe build-neko.hxml && popd
+haxelib git travix https://github.com/back2dos/travix
 ```
