@@ -41,8 +41,9 @@ jobs:
           - windows-latest
         haxe:
           - 4.2.5
-          - 4.3.7
+          - stable
           - 5.0.0-preview.1
+          - nightly
 
     steps:
     - name: Git Checkout
