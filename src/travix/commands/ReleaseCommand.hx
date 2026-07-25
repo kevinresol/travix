@@ -71,11 +71,11 @@ class ReleaseCommand {
 		
 		switch Sys.getEnv('HAXELIB_AUTH') {
 			case null:
-				error('Haxelib credentials missing. Use travix_auth to set it up.');
+				error('Haxelib credentials not found. Please set the HAXELIB_AUTH environment variable using the format <username>:<password>.');
 				
 			case v:
 				var i = v.indexOf(':');
-				if(i == -1) error('Incorrect format for the haxelib credentials. Use travix_auth to set it up.');
+				if(i == -1) error('Incorrect format for the haxelib credentials. Please set the HAXELIB_AUTH environment variable using the format <username>:<password>.');
 				var user = v.substr(0, i);
 				var pass = v.substr(i + 1);
 				Sys.println('== Submitting haxelib');

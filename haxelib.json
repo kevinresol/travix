@@ -3,7 +3,6 @@
 	"description": "Travis helper for Haxe",
 	"classPath": "src",
 	"dependencies": {
-		"hx3compat": "",
 		"tink_cli": ""
 	},
 

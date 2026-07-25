@@ -152,11 +152,6 @@ class Travix {
     new InitCommand().doIt(prompt);
 
   /**
-   * Authorize haxelib
-   */
-  @:command
-  public var auth = new AuthCommand();
-  /**
    * Release to haxelib
    */
   @:command
